@@ -1,0 +1,203 @@
+@font-face {
+    font-family: Arte;
+    src: url(Megihari.otf) format(Opentype);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141414;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    margin-left: 5%;
+}
+
+i {
+    font-size: 30px;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 5%;
+    z-index: 2;
+}
+
+.menu h1 {
+    margin: 0;
+    padding: 10px 20px;
+    font-weight: 300;
+    white-space: nowrap;
+}
+
+.entrada {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+}
+
+@media (max-width: 1365px) {
+    .menu {
+        padding: 10px 3%;
+    }
+
+    .menu h1 {
+        padding: 10px 10px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 50px;
+    }
+
+    .descricao {
+        margin-left: 2%;
+    }
+}
+
+@media (max-width: 1037px) {
+    .menu {
+        align-items: flex-start;
+    }
+
+    .menu h1 {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    .logo {
+        margin-left: 0;
+        margin-bottom: 10px;
+        width: 100px;
+        height: 50px;
+    }
+
+    i {
+        font-size: 24px;
+    }
+    
+    .descricao {
+        margin-left: 8%;
+    }
+    
+    button {
+        font-size: 5px;
+        margin-left: 3%;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu h1 {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+
+    .logo {
+        width: 60px;
+        height: 21px;
+    }
+
+    i {
+        font-size: 20px;
+    }
+}
+
+.titulo {
+    font-family: Arte;
+    font-weight: 300;
+}
+
+button {
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: sans-serif;
+    z-index: 3;
+}
+
+button:hover {
+    background-color: #ffffff;
+}
+
+.descricao {
+    max-width: 500px;
+    position: absolute;
+    top: 40%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 18px;
+    z-index: 3;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.exemplos-esculturas,
+.exemplos-pinturas,
+.exemplos-arquitetura {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 15px;
+}
+
+.exemplos-esculturas img,
+.exemplos-pinturas img,
+.exemplos-arquitetura img {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.titulo-esculturas {
+    font-size: 30px;
+    margin-left: 1.2%;
+}
+
+.titulo-pinturas {
+    font-size: 30px;
+    margin-left: 1.2%;
+}
+
+.titulo-arquitetura {
+    font-size: 30px;
+    margin-left: 1.2%;
+}
